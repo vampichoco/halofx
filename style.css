@@ -1,0 +1,31 @@
+body {
+    background-image: url(binding_dark.png);
+    background-repeat: repeat;
+
+}
+
+.main-container{
+    margin:5px;
+} 
+
+h1, h2, h3, h4, h5{
+    color:white;
+} 
+
+.btn-halofx{
+    background-color: #23D6FF;
+    color: black;
+}
+
+.form-item{
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.colorButton{
+    border-radius: 0px; 
+    border:0px solid transparent; 
+    margin:0px;
+    float:left;
+    padding:10px;
+}
