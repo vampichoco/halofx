@@ -81,6 +81,9 @@ function halofx(){
             hex: hexColor, 
             value: colorToSend
         }
+
+        sendDebug(color);
+
         db.colors.put(color).then(function(){
             var btn =
              $('<button class="colorButton"></button>')
@@ -98,6 +101,8 @@ function halofx(){
 }
 
 function sendMessage(message){
+    mess = {"message": message}; 
+    sendDebug(message);
     bluetoothSerial.write(message);
 }
 
@@ -185,3 +190,22 @@ function loadMyColors(){
         })
 }
 
+function sendDebug(ob) {
+    var Airtable = require('airtable');
+    var base = new Airtable({apiKey: 'keyYg3bQhyi6DluED'}).base('appCnDAlxLM9kceXk');
+
+    message = JSON.stringify(ob);
+
+    base('messages').create({
+        "message": message, 
+        "dateTime": new Date()
+    }, function(err, record) {
+        if (err) {
+            console.error(err);
+            window.alert(err);
+            return;
+        }
+
+
+    });
+}
