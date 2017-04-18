@@ -17,6 +17,11 @@ h1, h2, h3, h4, h5{
     color: black;
 }
 
+.green {
+    background-color: #49FF7F; 
+    color:black;
+}
+
 .form-item{
     margin-bottom:20px;
     margin-top:20px;
@@ -28,4 +33,16 @@ h1, h2, h3, h4, h5{
     margin:0px;
     float:left;
     padding:10px;
+} 
+
+
+
+.section-container{
+    text-align: center;
+    padding:10px;
+    background-color:rgba(255,255,255,0.2);
+    border-radius: 4px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border: 1px solid #23D6FF;
 }

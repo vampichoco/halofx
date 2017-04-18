@@ -44,55 +44,59 @@
 	<div class="main-container">
 		<h1>haloFX</h1>
 
-		<button class="btn btn-default btn-block" id="sayhello">Conectar dispositivo</button>
+		<button class="btn green btn-block" id="sayhello">Conectar dispositivo</button>
 
+		
 		<div class="section-container">
-			<h3>WinterFX 1 </h3>
+			<h2>WinterFX 1 </h2>
 			<div class="range range-primary">
 				<input id="ex1" type="range" min="0" max="255" value="255" />
 			</div>
 		
-			<div class="form-item">
-				<button class="btn btn-halofx btn-block" id="turnon">Encender</button>
+			<div class="btn-group btn-group-lg" role="group">
+				<button class="btn btn-halofx" id="turnon">Encender</button>
+				<button class="btn btn-halofx" id="turnoff">Apagar</button>
 			</div>
-			<div class="form-item">
-				<button class="btn btn-halofx btn-block" id="turnoff">Apagar</button>
-			</div>
+
+			
 		</div>
 
+		
 		<div class="section-container">
-			<h3>WinterFX 2 </h3>
+			<h2>WinterFX 2 </h2>
 			<div class="range range-primary">
 				<input id="ex2" type="range" min="0" max="255" value="255" />
 			</div>
-		
-			<div class="form-item">
-				<button class="btn btn-halofx btn-block" id="turnon_2">Encender</button>
+
+			<div class="btn-group btn-group-lg" role="group"> 
+				<button class="btn btn-halofx" id="turnon_2">Encender</button>
+				<button class="btn btn-halofx" id="turnoff_2">Apagar</button>
 			</div>
-			<div class="form-item">
-				<button class="btn btn-halofx btn-block" id="turnoff_2">Apagar</button>
-			</div>
+			
 		</div>
 		
 
+		
 		<div class="section-container">
-			<h3>Color</h3>
+			<h2>Color</h2>
+			<div class="form-item">
 
 			<button class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'} btn btn-default">
 			Seleccionar color
 			</button>
 
-			<div class="form-item">
-				<button class="btn btn-halofx btn-block" id="yellow">enviar color</button>
 			</div>
 
-			<div class="form-item">
-				<button class="btn btn-halofx btn-block" id="addColorButton">guardar color</button>
+			<div class="btn-group btn-group-lg" role="group">
+				<button class="btn btn-halofx" id="yellow">enviar color</button>
+				<button class="btn btn-halofx" id="addColorButton">guardar color</button>
 			</div>
+
+			
 		</div>
 
-		<div class="section-container" id="myColors">
-			<h3>Mis colores</h3> 
+		<h2>Mis colores</h2>
+		<div id="myColors">
 			
 		</div>
 		
