@@ -136,12 +136,10 @@ function fill(val){
         if (repeat == 0){
             return val;
         }else{
-            var zero = "0";
-            return zero.repeat(repeat) + val;
+            var rep = 
+                Array(repeat + 1).join('0');
+            return rep + val;
         }
-
-        
-    
 }
 
 function setTextColor(picker) {
