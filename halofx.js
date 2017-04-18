@@ -136,7 +136,8 @@ function fill(val){
         if (repeat == 0){
             return val;
         }else{
-            return "0".repeat(repeat) + val;
+            var zero = "0";
+            return zero.repeat(repeat) + val;
         }
 
         
