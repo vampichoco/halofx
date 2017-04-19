@@ -15,6 +15,7 @@ function halofx(){
     
 
     $('#sayhello').click(function(){
+        $('#devicesList').empty();
         $('#devicesModal').modal('show');
         listdevices();
 

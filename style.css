@@ -1,6 +1,7 @@
 body {
-    background-image: url(binding_dark.png);
+    
     background-repeat: repeat;
+    background-color: black;
 
 }
 
@@ -9,17 +10,20 @@ body {
 } 
 
 h1, h2, h3, h4, h5{
-    color:white;
+    color:#FF5883;
+    text-shadow: 1px 0px 15px rgba(219, 99, 108, 0.9);
 } 
 
 .btn-halofx{
     background-color: #23D6FF;
     color: black;
+    box-shadow: 0px 2px 25px rgba(54,230, 234, 0.9);
 }
 
 .green {
     background-color: #49FF7F; 
     color:black;
+    box-shadow: 0px 2px 25px rgba(55,239,175, 0.9);
 }
 
 .form-item{
@@ -39,10 +43,102 @@ h1, h2, h3, h4, h5{
 
 .section-container{
     text-align: center;
-    padding:10px;
-    background-color:rgba(255,255,255,0.2);
-    border-radius: 4px;
-    margin-top:10px;
-    margin-bottom:10px;
-    border: 1px solid #23D6FF;
+    padding:20px;
+    background-color:black;
+    /* border-radius: 4px; */
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left:5px;
+    margin-right:5px;
+    border: 2px solid #4EFCF0;
+    box-shadow: 0px 2px 15px rgba(54,230, 234, 0.8);
+   
+    
+}
+
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    
+    /*required for proper track sizing in FF*/
+    
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 16px;
+    background: #23D6FF;
+    border-radius: 0px;
+    box-shadow: 0px 2px 15px rgba(54,230, 234, 0.5);
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    background: #FF5883;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #23D6FF;
+}
+
+input[type=range]::-moz-range-track {
+    height: 16px;
+    background: #23D6FF;
+    border: none;
+    box-shadow: 0px 2px 15px rgba(54,230, 234, 0.5);
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 0px;
+    background: #FF5883;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    height: 16px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+    box-shadow: 0px 2px 15px rgba(54,230, 234, 0.5);
+}
+input[type=range]::-ms-fill-lower {
+    background: #23D6FF;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: transparent;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #FF5883;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #23D6FF;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #23D6FF;
 }
