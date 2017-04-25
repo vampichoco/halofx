@@ -17,12 +17,21 @@ h1, h2, h3, h4, h5{
 .btn-halofx{
     background-color: #23D6FF;
     color: black;
+}
+
+.neon-blue{
     box-shadow: 0px 2px 25px rgba(54,230, 234, 0.9);
+    border: 0px solid transparent;
+    background-color:transparent;
+    border-radius: 10px;
 }
 
 .green {
     background-color: #49FF7F; 
     color:black;
+} 
+
+.neon-green{
     box-shadow: 0px 2px 25px rgba(55,239,175, 0.9);
 }
 
@@ -52,6 +61,7 @@ h1, h2, h3, h4, h5{
     margin-right:5px;
     border: 2px solid #4EFCF0;
     box-shadow: 0px 2px 15px rgba(54,230, 234, 0.8);
+    overflow: hidden;
    
     
 }

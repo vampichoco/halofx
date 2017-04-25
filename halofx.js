@@ -38,7 +38,7 @@ function halofx(){
 
         wfx1isOn = true;
         
-        window.alert("encender");
+        //window.alert("encender");
 
     })
 
